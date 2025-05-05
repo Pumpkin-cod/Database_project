@@ -5,7 +5,7 @@ const mysql = require('mysql2/promise');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Create a connection pool
+// Creating a connection pool
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -74,7 +74,7 @@ app.get('/api/orders/monthly-sales', async (req, res) => {
   }
 });
 
-// 3. Get products never ordered (though your query returned empty)
+// 3. Get products never ordered 
 app.get('/api/products/never-ordered', async (req, res) => {
   try {
     const [results] = await pool.query(`
@@ -97,7 +97,7 @@ app.get('/api/products/never-ordered', async (req, res) => {
   }
 });
 
-// 4. Get average order value by country (fixed the JOIN issue)
+// 4. Get average order value by country 
 app.get('/api/orders/avg-by-country', async (req, res) => {
   try {
     const [results] = await pool.query(`
