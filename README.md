@@ -38,3 +38,11 @@ Returns customers who have placed more than one order.
 1. Install dependencies:
 ```bash
 npm install
+
+
+## API Live Endpoints
+http://34.254.98.178:3000/api/orders/monthly-sales
+http://34.254.98.178:3000/api/customers/total-spent
+http://34.254.98.178:3000/api/products/never-ordered 
+http://34.254.98.178:3000/api/orders/avg-by-country
+http://34.254.98.178:3000/api/customers/repeat
