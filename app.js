@@ -17,7 +17,7 @@ const pool = mysql.createPool({
 });
 
 // Middleware
-app.use(express.json());
+// app.use(express.json());
 
 // API Endpoints
 
